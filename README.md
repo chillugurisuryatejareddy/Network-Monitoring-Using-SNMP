@@ -138,26 +138,5 @@ The information in the file should be read that the first column contains the in
 1.3.6.1.4.1.4171.40.3 Value of (counter64) 3, i.e. y3=C3*Ty 
 The service on 1612 uses 64bit counters for all values (1611 alternates between 32 and 64-bit versions). 
 
-Below you find a couple of examples how to probe one of the simulators from console (Ubuntu 20.04LTS)
-
-pal@Helicon:~$ snmpwalk -t 1 -r 1 -v2c -c public 18.219.51.6:1612 1.3.6.1.4.1.4171.40.1
-iso.3.6.1.4.1.4171.40.1 = Counter64: 62345933092404000
-pal@Helicon:~$ snmpwalk -t 1 -r 1 -v2c -c public 18.219.51.6:1612 1.3.6.1.4.1.4171.40.1
-iso.3.6.1.4.1.4171.40.1 = Counter64: 62345933170236000
-pal@Helicon:~$ snmpwalk -t 1 -r 1 -v2c -c public 18.219.51.6:1611 1.3.6.1.4.1.4171.40.1
-pal@Helicon:~$ date; snmpget -t 1 -r 1 -v2c -c public 18.219.51.6:1611 1.3.6.1.4.1.4171.40.1
-ons  7 okt 2020 12:13:36 CEST
-iso.3.6.1.4.1.4171.40.1 = INTEGER: 1602065616
-pal@Helicon:~$ date; snmpget -t 1 -r 1 -v2c -c public 18.219.51.6:1611 1.3.6.1.4.1.4171.40.1
-ons  7 okt 2020 12:13:38 CEST
-iso.3.6.1.4.1.4171.40.1 = INTEGER: 1602065618
-pal@Helicon:~$ date; snmpget -t 1 -r 1 -v2c -c public 18.219.51.6:1611 1.3.6.1.4.1.4171.40.2
-ons  7 okt 2020 12:13:39 CEST
-iso.3.6.1.4.1.4171.40.2 = Counter32: 4137066720
-pal@Helicon:~$ date; snmpget -t 1 -r 1 -v2c -c public 18.219.51.6:1611 1.3.6.1.4.1.4171.40.2
-ons  7 okt 2020 12:13:41 CEST
-iso.3.6.1.4.1.4171.40.2 = Counter32: 4214898720
-
-Note: this is just examples, the capacity for .2 (interface 1) is "1,38916000". 
 
  
