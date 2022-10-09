@@ -1,4 +1,4 @@
-# Simple-service-performance
+# SNMP monitorning using python script and easysnmp API.
 This main goal of the project is to probing devices and monitoring
 You need to do an extended version of the 'Simple Service Performance' assignment. Described, below. 
 
